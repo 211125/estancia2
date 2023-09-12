@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar{
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.collapse{
+    margin-top: 5px;
+    /* background-color: #fff; */
+    padding: 5px 10px;
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px #006ece; */
+}
+
+
+.navbar-brand{
+    color: var(--blue-strong);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+.navbar-nav li a{
+    color: var(--black);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler{
+    background-color: var(--white) !important;
+}
+
+.btnChido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnChido button{
+    padding: 7px 25px;
+    background-color: var(--blue-strong);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    #navbarNav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navbar-nav{
+        display: flex;
+        gap: 26px;
+    }
+
+    .title{
+        display: flex;
+    }
+    .collapse{
+        background-color: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+    .nav-link:hover{
+        color: var(--blue-strong);
+    }
+}
